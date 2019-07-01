@@ -6,7 +6,7 @@
 <img src="https://colaninfotech.com/wp-content/uploads/2019/01/Polymer_Banner.png" title="Polymer Technology" alt="Polymer Technology"  width="100%">
 
 # frontend-polymer-training (used in examples)
-Tips and tricks working with Polymer 2.0 WebComponents
+Tips and tricks working with Polymer 2.0 WebComponents and Javascript ES6
 
 ## Installation
 
@@ -126,6 +126,27 @@ let b = 10;
 console.log(`Fifteen is ${a + b} and not ${2 * a + b}.`);
 // "Fifteen is 15 and
 // not 20."
+
+```
+## Javascript JSON.parse() and JSON.stringify()
+The **JSON object**, available in all modern browsers, has two very useful methods to deal with JSON-formatted content:
+
+**JSON.parse()** method parses a JSON string, constructing the JavaScript value or object described by the string. 
+**JSON.stringify()** method converts a JavaScript object or value to a JSON string
+
+```javascript
+
+let json = '{"result":true, "count":42}';
+obj = JSON.parse(json);
+console.log(obj.count);
+// expected output: 42
+console.log(obj.result);
+// expected output: true
+
+console.log(JSON.stringify({ x: 5, y: 6 }));
+// expected output: "{"x":5,"y":6}"
+console.log(JSON.stringify([new Number(3), new String('false'), new Boolean(false)]));
+// expected output: "[3,"false",false]"
 
 ```
 
