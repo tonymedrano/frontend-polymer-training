@@ -5,7 +5,7 @@
  
 <img src="https://colaninfotech.com/wp-content/uploads/2019/01/Polymer_Banner.png" title="Polymer Technology" alt="Polymer Technology"  width="100%">
 
-# frontend-polymer-training (Javascript used in examples only)
+# frontend-polymer-training (used in examples)
 Tips and tricks working with Polymer 2.0 WebComponents
 
 ## Installation
