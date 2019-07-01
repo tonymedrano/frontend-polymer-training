@@ -39,7 +39,8 @@ I use `let` when I need to reassign a variable and
 ```javascript
 // forEach function ieration
 forEach() method executes a provided function once for each array element.
-`arr.forEach(callback(currentValue [, index [, array]])[, thisArg]);`
+
+> Syntax: arr.forEach(callback(currentValue [, index [, array]])[, thisArg]);
 
 const arr = ['a', 'b', 'c'];
 
