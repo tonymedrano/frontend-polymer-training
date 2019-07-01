@@ -1,11 +1,11 @@
- * Project: /Users/tonymedrano/Desktop/frontend-polymer-training
- * Created Date: Friday June 28 2019
- * Author: tonymedrano
-  
- 
+- Project: /Users/tonymedrano/Desktop/frontend-polymer-training
+- Created Date: Friday June 28 2019
+- Author: tonymedrano
+
 <img src="https://colaninfotech.com/wp-content/uploads/2019/01/Polymer_Banner.png" title="Polymer Technology" alt="Polymer Technology"  width="100%">
 
 # frontend-polymer-training (used in examples)
+
 Tips and tricks working with Polymer 2.0 WebComponents and Javascript ES6
 
 ## Installation
@@ -22,7 +22,7 @@ Tips and tricks working with Polymer 2.0 WebComponents and Javascript ES6
 
 ```shell
 $ yarn global add polymer-cli
-# or... 
+# or...
 $ npm install -g polymer-cli
 $ npm install -g bower
 $ bower install (dependecies)
@@ -37,10 +37,9 @@ I use `let` when I need to reassign a variable and
 `const` is a signal that the identifier won’t be reassigned.
 `var` is now the weakest signal available when you define a variable in JavaScript.
 
-
 ## Javascript iterators
 
-Iterator is a interface that specifies that an object/array object can be accessible 
+Iterator is a interface that specifies that an object/array object can be accessible
 if it implements one of the following method:
 
 ```javascript
@@ -59,10 +58,11 @@ arr.forEach((element) => {
 // expected output: "b"
 // expected output: "c"
 ```
+
 ```javascript
 
 // map function iteration
-map() method creates a new array with the results of calling a provided function 
+map() method creates a new array with the results of calling a provided function
 on every element in the calling array.
 
 > Syntax: const new_arr = arr.map(callback(currentValue[, index[, array]]) {
@@ -76,10 +76,11 @@ const map1 = arr2.map(x => x * 2);
 console.log(map1);
 // expected output: Array [2, 8, 18, 32]
 ```
+
 ```javascript
 
 // filter function iteration (remember, this return a filtered array all matched objects).
-filter() method creates a new array with all elements that pass the test implemented 
+filter() method creates a new array with all elements that pass the test implemented
 by the provided function.
 
 > Syntax: const newArray = arr.filter(callback(element[, index[, array]])[, thisArg])
@@ -89,10 +90,12 @@ const result = words.filter(word => word.length > 6);
 console.log(result);
 // expected output: Array ["exuberant", "destruction", "present"]
 ```
+
 ```javascript
 
 // find function iteration (return the first matched element).
-find() method returns the value of the first element in the array that satisfies the provided testing function.
+find() method returns the value of the first element in the array that satisfies
+the provided testing function.
 
 > Syntax: const findedObj = arr.find(callback(element[, index[, array]])[, thisArg])
 
@@ -111,23 +114,28 @@ console.log(found);
 Here you can dispatch DOM events. Such events are commonly called synthetic events.
 
 ```javascript
-
 // Adding custom data and triggering – CustomEvent().
-document.dispatchEvent(new CustomEvent('your-event-name', { detail: somedata }));
+document.dispatchEvent(
+  new CustomEvent("your-event-name", { detail: somedata })
+);
 
 // Catch event with custom data – CustomEvent().
-document.addEventListener('your-event-name', (event) => {
-  // event.target matches elem
-}, false);
+document.addEventListener(
+  "your-event-name",
+  event => {
+    // event.target matches elem
+  },
+  false
+);
 ```
+
 ## Javascript Template literals
 
 ```javascript
-
 // Old fashion style.
 var a = 5;
 var b = 10;
-console.log('Fifteen is ' + (a + b) + ' and\nnot ' + (2 * a + b) + '.');
+console.log("Fifteen is " + (a + b) + " and\nnot " + (2 * a + b) + ".");
 // "Fifteen is 15 and
 // not 20."
 
@@ -137,16 +145,16 @@ let b = 10;
 console.log(`Fifteen is ${a + b} and not ${2 * a + b}.`);
 // "Fifteen is 15 and
 // not 20."
-
 ```
+
 ## Javascript JSON.parse() and JSON.stringify()
+
 The **JSON object**, available in all modern browsers, has two very useful methods to deal with JSON-formatted content:
 
-**JSON.parse()** method parses a JSON string, constructing the JavaScript value or object described by the string. 
+**JSON.parse()** method parses a JSON string, constructing the JavaScript value or object described by the string.
 **JSON.stringify()** method converts a JavaScript object or value to a JSON string.
 
 ```javascript
-
 let json = '{"result":true, "count":42}';
 obj = JSON.parse(json);
 console.log(obj.count);
@@ -156,36 +164,65 @@ console.log(obj.result);
 
 console.log(JSON.stringify({ x: 5, y: 6 }));
 // expected output: "{"x":5,"y":6}"
-console.log(JSON.stringify([new Number(3), new String('false'), new Boolean(false)]));
+console.log(
+  JSON.stringify([new Number(3), new String("false"), new Boolean(false)])
+);
 // expected output: "[3,"false",false]"
-
 ```
 
 ---
 
 <img src="https://66.media.tumblr.com/655bac733ca8683c9768bf10a924b11d/tumblr_mqnxqhoc5Y1syu690o2_500.gif" title="Polymer Technology Ironman" alt="Polymer Technology Ironman" width="100%">
 
-## Javascript JSON.parse() and JSON.stringify()
-The **JSON object**, available in all modern browsers, has two very useful methods to deal with JSON-formatted content:
+## Javascript HTTP and Ajax
 
-**JSON.parse()** method parses a JSON string, constructing the JavaScript value or object described by the string. 
-**JSON.stringify()** method converts a JavaScript object or value to a JSON string.
+**Fetch** provides a generic definition of Request 
+and Response objects (and other things involved with network requests).
+
+The **fetch()** method takes one mandatory argument, the path to the resource you want to fetch.
+
+```javascript
+fetch("http://your-url.com/endpoint")
+  .then(response => {
+    return response.json();
+  })
+  .then(myJson => {
+    console.log(JSON.stringify(myJson));
+  });
+
+// The second is an object of options including mehtod (GET, POST, PATCH, DELETE), credentials, headers, body.
+const url = "http://your-url.com/endpoint/profile";
+const data = { username: "example" };
+
+fetch(url, {
+  method: "POST", // or 'PUT'
+  body: JSON.stringify(data), // data can be `string` or {object}!
+  headers: {
+    "Content-Type": "application/json"
+  }
+})
+  .then(res => res.json())
+  .then(response => console.log("Success:", JSON.stringify(response)))
+  .catch(error => console.error("Error:", error));
+```
+
+**XMLHttpRequest (XHR)** objects to interact with servers. You can retrieve data from a URL 
+without having to do a full page refresh.
 
 ```javascript
 
-let json = '{"result":true, "count":42}';
-obj = JSON.parse(json);
-console.log(obj.count);
-// expected output: 42
-console.log(obj.result);
-// expected output: true
-
-console.log(JSON.stringify({ x: 5, y: 6 }));
-// expected output: "{"x":5,"y":6}"
-console.log(JSON.stringify([new Number(3), new String('false'), new Boolean(false)]));
-// expected output: "[3,"false",false]"
-
+const xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = () => {
+    if (this.readyState == 4 && this.status == 200) {
+       // Typical action to be performed when the document is ready:
+       document.getElementById("demo").innerHTML = xhttp.responseText;
+    }
+};
+xhttp.open("GET", "filename", true);
+xhttp.send();
 ```
+
+---
 
 ## License
 
