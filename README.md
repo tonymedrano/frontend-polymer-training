@@ -37,14 +37,19 @@ I use `let` when I need to reassign a variable and
 `var` is now the weakest signal available when you define a variable in JavaScript.
 
 ```javascript
-// code away!
+// forEach function ieration
+forEach() method executes a provided function once for each array element.
+`arr.forEach(callback(currentValue [, index [, array]])[, thisArg]);`
 
-let generateProject = project => {
-  let code = [];
-  for (let js = 0; js < project.length; js++) {
-    code.push(js);
-  }
-};
+const arr = ['a', 'b', 'c'];
+
+arr.forEach((element) => {
+  console.log(element);
+});
+
+// expected output: "a"
+// expected output: "b"
+// expected output: "c"
 ```
 
 ---
