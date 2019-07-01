@@ -254,7 +254,7 @@ http.send(params);
 
 The **JSON object**, available in all modern browsers, has two very useful methods to deal with JSON-formatted content:
 
-<img src="http:www.tonymedrano.com/webcomponent.png" title="Polymer Technology Webcomponent" alt="Polymer Technology Webcomponent" width="100%">
+<img src="http://www.tonymedrano.com/webcomponent.png" title="Polymer Technology Webcomponent" alt="Polymer Technology Webcomponent" width="100%">
 
 ---
 
