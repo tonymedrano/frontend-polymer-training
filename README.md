@@ -1,11 +1,21 @@
  * Project: /Users/tonymedrano/Desktop/frontend-polymer-training
- * Created Date: Monday July 1st 2019
+ * Created Date: Friday June 28 2019
  * Author: tonymedrano
  
 <img src="https://colaninfotech.com/wp-content/uploads/2019/01/Polymer_Banner.png" title="Polymer Technology" alt="Polymer Technology">
 
 # frontend-polymer-training
 Tips and tricks working with Polymer 2.0 WebComponents
+
+## Installation
+
+- All the `code` required to get started
+
+### Clone
+
+- Clone this repo to your local machine using `https://github.com/tonymedrano/frontend-polymer-training`
+
+### Setup
 
 > update and install this package first
 
@@ -15,12 +25,12 @@ $ yarn global add polymer-cli
 $ npm install -g polymer-cli
 $ npm install -g bower
 $ bower install (dependecies)
-$ polymer init (create)
+$ polymer init (create and initial setting)
 $ polymer serve (run local server)
 $ polymer build (compile the project)
 ```
 
-## Javascript (Optional)
+## Javascript (used in example)
 
 I use `let` when I need to reassign a variable and
 `const` is a signal that the identifier won’t be reassigned.
