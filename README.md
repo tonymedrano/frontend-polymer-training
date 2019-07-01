@@ -254,7 +254,7 @@ http.send(params);
 
 The **JSON object**, available in all modern browsers, has two very useful methods to deal with JSON-formatted content:
 
-<img src="https://previews.dropbox.com/p/thumb/AAedR0gyGwzAgm6YC7iy68z0mQjkp86HqgML3xi030PGgsnmbxuZjKdlzJU8qc8G3u25-hk9o5vJukJsy5FcZnUzyQHklfj8qD3CDOPp9tY7cyu5hTemgw8wBppVVpcJVZe2esSXxrIlaJ1oKyk6BZ2dbv1-BUWJJEJf_j_-KJW02yKCcH32CWbyLhc2CJai3DA1WvN98kyTW6-mwhsA1z9lm2PFaSCDBn_LalmWVHYEAyQQeAnqly_xg6hkQvW_juWqRqxc3ZKZhwugiClSQTG9BCHpMzgt7-1HMC_4xaqxTEvD4af95ShehsG6-6yR9-HP33FTywZzpniktRB-Ah_nZTXN7GLk_asQ_smJMC4psA/p.png?fv_content=true&size_mode=5" title="Polymer Technology Webcomponent" alt="Polymer Technology Webcomponent" width="100%">
+<img src="https://drive.google.com/file/d/1-P14Vqh4eQbVb6Zg4x48Z9e0rvmxirZx" title="Polymer Technology Webcomponent" alt="Polymer Technology Webcomponent" width="100%">
 
 ---
 
