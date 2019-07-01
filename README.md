@@ -176,7 +176,7 @@ console.log(
 
 ## Javascript HTTP and Ajax
 
-**Fetch** provides a generic definition of Request 
+**Fetch** provides a generic definition of Request
 and Response objects (and other things involved with network requests).
 
 The **fetch()** method takes one mandatory argument, the path to the resource you want to fetch.
@@ -190,7 +190,7 @@ fetch("http://your-url.com/endpoint")
     console.log(JSON.stringify(myJson));
   });
 
-// The second is an object of options including mehtod (GET, POST, PATCH, DELETE), 
+// The second is an object of options including mehtod (GET, POST, PATCH, DELETE),
 credentials, headers, body.
 const url = "http://your-url.com/endpoint/profile";
 const data = { username: "example" };
@@ -202,40 +202,41 @@ fetch(url, {
     "Content-Type": "application/json"
   }
 })
-  .then(res => res.json())
-  .then(response => console.log("Success:", JSON.stringify(response)))
-  .catch(error => console.error("Error:", error));
+.then(res => res.json())
+.then(response => console.log("Success:", JSON.stringify(response)))
+.catch(error => console.error("Error:", error));
 ```
 
-**XMLHttpRequest (XHR)** objects to interact with servers. You can retrieve data from a URL 
+**XMLHttpRequest (XHR)** objects to interact with servers. You can retrieve data from a URL
 without having to do a full page refresh.
 
 ```javascript
-
 // GET example
 const xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = () => {
-    if (this.readyState == 4 && this.status == 200) {
-       // Typical action to be performed when the document is ready:
-       document.querySelector("your-element-selector-or-id").innerHTML = xhttp.responseText;
-    }
+  if (this.readyState == 4 && this.status == 200) {
+    // Typical action to be performed when the document is ready:
+    document.querySelector("your-element-selector-or-id").innerHTML =
+      xhttp.responseText;
+  }
 };
 xhttp.open("GET", "filename", true);
 xhttp.send();
 
 // POST example
 const http = new XMLHttpRequest();
-const url = 'http://your-url.com/endpoint/';
-const params = 'lorem=ipsum&name=tonymedrano';
-http.open('POST', url, true); // Or DELETE, PATCH, etc.
+const url = "http://your-url.com/endpoint/";
+const params = "lorem=ipsum&name=tonymedrano";
+http.open("POST", url, true); // Or DELETE, PATCH, etc.
 
 //Send the proper header information along with the request
-http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 
-http.onreadystatechange = () => {//Call a function when the state changes.
-    if(http.readyState == 4 && http.status == 200) {
-        alert(http.responseText);
-    }
+http.onreadystatechange = () => {
+  //Call a function when the state changes.
+  if (http.readyState == 4 && http.status == 200) {
+    alert(http.responseText);
+  }
 };
 
 http.send(params);
