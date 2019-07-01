@@ -40,7 +40,7 @@ I use `let` when I need to reassign a variable and
 `const` is a signal that the identifier won’t be reassigned.
 `var` is now the weakest signal available when you define a variable in JavaScript.
 
-**Polymer recommended variable assigment
+👉🏽 **Polymer** recommended variable assigment
 
 ```javascript
 this.set('property', assignedValue);
