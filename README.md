@@ -1,12 +1,10 @@
-     |\   /|
-      \|_|/
-      /. .\
-  --<=\_Y_/=-->
-      {>o<}
- 
  * Project: /Users/tonymedrano/Desktop/frontend-polymer-training
  * Created Date: Friday June 28 2019
- * Author: tonymedrano 
+ * |\   /|
+ *  \|_|/
+ *  /. .\ 
+ * Author: tonymedrano
+  
  
 <img src="https://colaninfotech.com/wp-content/uploads/2019/01/Polymer_Banner.png" title="Polymer Technology" alt="Polymer Technology">
 
