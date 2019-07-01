@@ -94,6 +94,21 @@ console.log(result);
 
 <img src="https://i.pinimg.com/originals/dc/b9/30/dcb9303ed1fa81fe641e1e25ac644bb1.gif" title="Polymer Technology Ironman" alt="Polymer Technology Ironman">
 
+## Javascript Custom Events (used in example)
+
+Here you can dispatch DOM events. Such events are commonly called synthetic events.
+
+```javascript
+
+// Adding custom data and triggering – CustomEvent().
+document.dispatchEvent(new CustomEvent('your-event-name', { detail: somedata }));
+
+// Catch custom data – CustomEvent().
+document.addEventListener('your-event-name', (event) => {
+  // event.target matches elem
+}, false);
+```
+
 ## License
 
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
