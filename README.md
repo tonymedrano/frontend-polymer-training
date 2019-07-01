@@ -7,7 +7,7 @@
 # frontend-polymer-training (used in examples)
 
 👉🏽 Tips and tricks working with **Polymer 2.0** WebComponents and **Javascript ES6**.
-All explained here is used in the current project example, so it will be easy to follow. Enjoy! 🤡
+All explained here is used in the current project example, so it will be easy to follow. 🤡 **Enjoy!**
 
 ## Installation
 
