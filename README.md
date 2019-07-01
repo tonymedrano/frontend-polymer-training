@@ -40,6 +40,12 @@ I use `let` when I need to reassign a variable and
 `const` is a signal that the identifier won’t be reassigned.
 `var` is now the weakest signal available when you define a variable in JavaScript.
 
+**Polymer recommended variable assigment
+
+```javascript
+this.set('property', assignedValue);
+```
+
 ## Javascript iterators
 
 Iterator is a interface that specifies that an object/array object can be accessible
@@ -308,8 +314,8 @@ static get properties() {
   }
   // ...
 ```
-**Complex observers** are declared in the observers array.
-Here you can use or create a fucntion that observes and notifies props changes.
+**Complex observers** are declared in the observers array for more than one property to check.
+Here you can use or create a function that observes and notifies props changes.
 
 ```javascript
 static get observers() {
