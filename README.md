@@ -78,20 +78,16 @@ console.log(map1);
 
 ```javascript
 
-// map function iteration
-map() method creates a new array with the results of calling a provided function 
-on every element in the calling array.
+// filter function iteration
+filter() method creates a new array with all elements that pass the test implemented 
+by the provided function.
 
-> Syntax: const new_arr = arr.map(callback(currentValue[, index[, array]]) {
-    // Return element for new_arr
-}[, thisArg]);
+> Syntax: const newArray = arr.filter(callback(element[, index[, array]])[, thisArg])
 
-// map function ieration
-const arr2 = [1, 4, 9, 16];
-// pass a function to map
-const map1 = arr2.map(x => x * 2);
-console.log(map1);
-// expected output: Array [2, 8, 18, 32]
+const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+const result = words.filter(word => word.length > 6);
+console.log(result);
+// expected output: Array ["exuberant", "destruction", "present"]
 ```
 
 ---
