@@ -3,7 +3,7 @@
  * Author: tonymedrano
   
  
-<img src="https://colaninfotech.com/wp-content/uploads/2019/01/Polymer_Banner.png" title="Polymer Technology" alt="Polymer Technology">
+<img src="https://colaninfotech.com/wp-content/uploads/2019/01/Polymer_Banner.png" title="Polymer Technology" alt="Polymer Technology"  width="100%">
 
 # frontend-polymer-training
 Tips and tricks working with Polymer 2.0 WebComponents
