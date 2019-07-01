@@ -43,7 +43,7 @@ I use `let` when I need to reassign a variable and
 👇🏽 **Polymer** recommended variable assigment
 
 ```javascript
-this.set('property', assignedValue);
+this.set('property', assignedValue); //. not this.variable = something 😱
 ```
 
 ## Javascript iterators
