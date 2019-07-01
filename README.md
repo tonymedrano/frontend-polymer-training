@@ -1,8 +1,8 @@
  * Project: /Users/tonymedrano/Desktop/frontend-polymer-training
  * Created Date: Friday June 28 2019
- * |\   /|
- *  \|_|/
- *  /. .\ 
+  |\   /|
+   \|_|/
+   /. .\ 
  * Author: tonymedrano
   
  
