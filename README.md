@@ -1,12 +1,12 @@
-👉🏽 Project: /Users/tonymedrano/Desktop/frontend-polymer-training
-👉🏽 Created Date: Friday June 28 2019
-👉🏽 Author: tonymedrano 👦🏽
+- Project: /Users/tonymedrano/Desktop/frontend-polymer-training
+- Created Date: Friday June 28 2019
+- Author: tonymedrano 👦🏽
 
 <img src="https://colaninfotech.com/wp-content/uploads/2019/01/Polymer_Banner.png" title="Polymer Technology" alt="Polymer Technology"  width="100%">
 
 # frontend-polymer-training (used in examples)
 
-Tips and tricks working with Polymer 2.0 WebComponents and Javascript ES6.
+👉🏽 Tips and tricks working with Polymer 2.0 WebComponents and Javascript ES6.
 All explained here is used in the current project example, so it will be easy to follow. Enjoy! 🤡
 
 ## Installation
