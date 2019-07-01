@@ -1,0 +1,64 @@
+<link rel="import" href="../../../bower_components/polymer/polymer-element.html">
+
+<dom-module id="users-ajax-service">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+    </style>
+  </template>
+  <script>
+    /**
+     * `users-ajax-service`
+     * 
+     *
+     * @customElement
+     * @polymer
+     * @demo demo/index.html
+     */
+    class UsersAjaxService extends Polymer.Element {
+      static get is() {
+        return 'users-ajax-service';
+      }
+      static get properties() {
+        return {
+          url: {
+            type: String
+          }
+        };
+      }
+
+      _getOPtions(method, body){
+        return {
+          method, // *GET, POST, PUT, DELETE, etc.
+          mode: 'cors', // no-cors, cors, *same-origin
+          cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached
+          credentials: 'same-origin', // include, *same-origin, omit
+          headers: {
+            'Content-Type': 'application/json',
+            // 'Content-Type': 'application/x-www-form-urlencoded',
+          },
+          redirect: 'follow', // manual, *follow, error
+          referrer: 'no-referrer', // no-referrer, *client
+          body, // body data type must match "Content-Type" header
+        }
+      }
+
+      getAll() {
+        return fetch(`${this.url}/users`)
+          .then((response) => response.json())
+          .then((data) => data);
+      }
+
+      addUser(method, body) {
+        const options = this._getOPtions(method, body);
+        return fetch(`${this.url}/users`, options)
+          .then((response) => response.json())
+          .then((data) => data);
+      }
+    }
+
+    window.customElements.define(UsersAjaxService.is, UsersAjaxService);
+  </script>
+</dom-module>

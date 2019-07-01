@@ -1,0 +1,145 @@
+console.log('Running Frontend Training...');
+
+var name = 'Frontend Stuff';
+
+function nameCall() {
+    console.log(name);
+}
+
+nameCall();
+
+
+------------------------------- Functions --------------------
+
+const getName =  (name) => { // Arrow functions
+    console.log(name);
+}
+
+const getRole = function (name) { // Arrow functions
+    console.log(name);
+}
+
+function getAge(age){
+    console.log(age);
+}
+
+getName(list.name);
+getRole(list.role);
+getAge(list.age);
+
+
+----------------------- Getting Id and Class selector  ------------------------
+const button = document.getElementById('showimage');
+const ironman = document.getElementsByClassName('ironman');
+
+let show = false;
+button.addEventListener('click', () => {
+    show = !show;
+    if (show) {
+        ironman[0].style.display = 'block';
+    } else {
+        ironman[0].style.display = 'none';
+    }
+});
+
+
+-------------- Class like --------------------
+//. Class like - This keyword
+class Naming {
+    constructor(name, surname) {
+        this.name = name
+        this.surname = surname
+    }
+    getFullName() {
+        console.log(this.name + ' ' + this.surname);
+    }
+}
+const names = new Naming('Tony', 'Medrano');
+names.getFullName();
+
+---------------------- Iteretators --------------
+//. Iterations
+//. for loop
+/* for (let index = 0; index < persons.length; index++) {
+    console.log(persons[index].name);
+} */
+
+//. forEach
+/* persons.forEach((person) => {
+    console.log(person.name);
+}); */
+
+const chosen = persons.map((person) => {
+    if (person.age === 33) {
+        return person;
+    }
+});
+//. Filter
+const filtered = persons.filter((person) => person.age === 22);
+console.log(filtered);
+
+
+------------- Treating from Classes -----------------------
+
+const persons = [{
+        "name": "John Doe",
+        "genre": "male",
+        "age": 22,
+        "nickname": "Spawn"
+    },
+    {
+        "name": "Sara Doe",
+        "genre": "female",
+        "age": 26,
+        "nickname": "Marvel"
+    },
+    {
+        "name": "Peter Sun",
+        "genre": "male",
+        "age": 22,
+        "nickname": "Nick Pit"
+    },
+    {
+        "name": "Lara Croft",
+        "genre": "female",
+        "age": 19,
+        "nickname": "Lara"
+    },
+    {
+        "name": "Jovanni Bittorino",
+        "genre": "male",
+        "age": 41,
+        "nickname": "Vitaly"
+    }
+];
+
+const button = document.querySelector('#getuser')
+const input = document.querySelector('#user')
+const userData = document.querySelector('#userdata')
+
+class Person {
+    constructor(person) {
+        this.person = person;
+    }
+
+    getPerson() {
+        return `The person is ${this.name}, ${this.genre} and is ${this.age} years old.`;
+    }
+}
+
+//. Treating data
+const employees = [];
+persons.forEach((person, index) => {
+    const p = Object.assign(person, {id: index+1});
+    employees.push(new Person(p));
+});
+
+button.addEventListener('click', () => {
+    let template = '';
+    const word = input.value.charAt(0).toUpperCase();
+    const filtered = employees.filter((p) => p.person.name.includes(word));
+    filtered.forEach((f) => {
+        template += `<li> ${f.person.name}</li>`
+    });
+    userData.innerHTML = template;
+});

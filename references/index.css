@@ -1,0 +1,107 @@
+/** reset css **/
+html,
+body,
+* {
+  margin: 0;
+  padding: 0;
+}
+/** end reset css **/
+
+.training {
+  display: block;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  background: #eeeeee;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.training ul {
+  list-style-type: none;
+  margin-top: 10px;
+}
+
+.training ul a {
+  text-decoration: none;
+}
+
+.training header {
+  /** border: 1px dashed red; reference **/
+  background: #ffffff;
+  height: 60px;
+}
+
+.training header .buttons button {
+  display: inline-block;
+  color: white;
+  background: #666666;
+  padding: 5px 10px;
+  margin-right: 8px;
+  width: 70px;
+  cursor: pointer;
+  border: none;
+}
+
+.training header .buttons button:first-child {
+  background: red;
+}
+
+.training header .buttons button:last-child {
+  background: green;
+}
+
+.training header .buttons button:nth-child(3) {
+  background: purple;
+}
+
+.training header .buttons button:hover {
+  background: purple;
+}
+
+.training  img {
+  width: 60px;
+  float: left;
+  margin-right: 10px;
+  display: none;
+}
+
+.training header h1 {
+  color: brown;
+  margin-bottom: 12px;
+}
+
+.training .main {
+  width: 100% auto;
+  min-height: 400px;
+  margin: 20px;
+  background: white;
+  border: 3px dashed red; /*** reference ***/
+}
+
+.main {
+  padding: 10px;
+}
+
+.main ul li {
+  padding: 10px;
+  background: #eee;
+  margin-bottom: 8px;
+}
+
+.main input {
+  padding: 8px;
+}
+.main button {
+  padding: 10px;
+  background: orange;
+  border: none;
+  cursor: pointer;
+}
+
+.main p {
+  margin-top: 10px;
+  padding: 5px;
+  background: #eeeeee;
+  border: none;
+  cursor: pointer;
+}

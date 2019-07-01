@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+  <title>users-component demo</title>
+
+  <script src="../../../../bower_components/webcomponentsjs/webcomponents-loader.js"></script>
+
+  <link rel="import" href="../../../../bower_components/iron-demo-helpers/demo-pages-shared-styles.html">
+  <link rel="import" href="../../../../bower_components/iron-demo-helpers/demo-snippet.html">
+  <link rel="import" href="../users-component.html">
+
+  <custom-style>
+    <style is="custom-style" include="demo-pages-shared-styles">
+      users-component {
+        --users-component-header-color: lime;
+        --users-component-button-color: purple;
+        --users-component-basic-gray-color: orange;
+        --users-component-icons-color: white;
+      }
+    </style>
+  </custom-style>
+</head>
+
+<body>
+  <div class="vertical-section-container centered">
+    <h3>Basic users-component demo</h3>
+    <demo-snippet>
+      <template>
+        <dom-bind>
+          <template>
+            <div class="template">
+              <users-component data="{{binding}}" is-search-bar="{{hideButtons}}"></users-component>
+            </div>
+          </template>
+        </dom-bind>
+        <script>
+          const domBind = document.querySelector('dom-bind');
+          domBind.hideButtons = false;
+          domBind.binding = [{
+              "id": 1,
+              "name": "Leanne Graham",
+              "username": "Bret",
+              "email": "Sincere@april.biz",
+              "address": {
+                "street": "Kulas Light",
+                "suite": "Apt. 556",
+                "city": "Gwenborough",
+                "zipcode": "92998-3874",
+                "geo": {
+                  "lat": "-37.3159",
+                  "lng": "81.1496"
+                }
+              }
+            }];
+        </script>
+      </template>
+    </demo-snippet>
+  </div>
+</body>
+
+</html>
