@@ -249,7 +249,14 @@ http.send(params);
 
 <img src="https://rkuykendall.github.io/wheretostartreading/articles/iron-man.jpg" title="Polymer Technology Ironman" alt="Polymer Technology Ironman" width="100%">
 
-## License
+
+## Polymer webcomponent structure
+
+The **JSON object**, available in all modern browsers, has two very useful methods to deal with JSON-formatted content:
+
+<img src="https://previews.dropbox.com/p/thumb/AAedR0gyGwzAgm6YC7iy68z0mQjkp86HqgML3xi030PGgsnmbxuZjKdlzJU8qc8G3u25-hk9o5vJukJsy5FcZnUzyQHklfj8qD3CDOPp9tY7cyu5hTemgw8wBppVVpcJVZe2esSXxrIlaJ1oKyk6BZ2dbv1-BUWJJEJf_j_-KJW02yKCcH32CWbyLhc2CJai3DA1WvN98kyTW6-mwhsA1z9lm2PFaSCDBn_LalmWVHYEAyQQeAnqly_xg6hkQvW_juWqRqxc3ZKZhwugiClSQTG9BCHpMzgt7-1HMC_4xaqxTEvD4af95ShehsG6-6yR9-HP33FTywZzpniktRB-Ah_nZTXN7GLk_asQ_smJMC4psA/p.png" title="Polymer Technology Webcomponent" alt="Polymer Technology Webcomponent" width="100%">
+
+---
 
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
 
