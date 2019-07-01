@@ -93,7 +93,7 @@ console.log(result);
 
 ---
 
-<img src="http://www.kodecrash.com/wp-content/uploads/2018/09/Custom-events.png" title="Polymer Technology" alt="Polymer Technology">
+<img src="https://i.pinimg.com/originals/dc/b9/30/dcb9303ed1fa81fe641e1e25ac644bb1.gif" title="Polymer Technology Ironman" alt="Polymer Technology Ironman" width="100%">
 
 ## Javascript Custom Events (used in example)
 
