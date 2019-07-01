@@ -51,6 +51,8 @@ arr.forEach((element) => {
 // expected output: "a"
 // expected output: "b"
 // expected output: "c"
+```
+```javascript
 
 // map function iteration
 map() method creates a new array with the results of calling a provided function on every element in the calling array
