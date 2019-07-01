@@ -1,10 +1,11 @@
- * Project: /Users/tonymedrano/Desktop/frontend-polymer-training
- * Created Date: Friday June 28 2019
- * Author: tonymedrano
- 
+- Project: /Users/tonymedrano/Desktop/frontend-polymer-training
+- Created Date: Friday June 28 2019
+- Author: tonymedrano
+
 <img src="https://colaninfotech.com/wp-content/uploads/2019/01/Polymer_Banner.png" title="Polymer Technology" alt="Polymer Technology">
 
 # frontend-polymer-training
+
 Tips and tricks working with Polymer 2.0 WebComponents
 
 ## Installation
@@ -21,7 +22,7 @@ Tips and tricks working with Polymer 2.0 WebComponents
 
 ```shell
 $ yarn global add polymer-cli
-# or... 
+# or...
 $ npm install -g polymer-cli
 $ npm install -g bower
 $ bower install (dependecies)
@@ -36,10 +37,9 @@ I use `let` when I need to reassign a variable and
 `const` is a signal that the identifier won’t be reassigned.
 `var` is now the weakest signal available when you define a variable in JavaScript.
 
-
 ## Javascript iterators (used in example)
 
-Iterator is a interface that specifies that an object/array object can be accessible 
+Iterator is a interface that specifies that an object/array object can be accessible
 if it implements one of the following method:
 
 ```javascript
@@ -58,10 +58,11 @@ arr.forEach((element) => {
 // expected output: "b"
 // expected output: "c"
 ```
+
 ```javascript
 
 // map function iteration
-map() method creates a new array with the results of calling a provided function 
+map() method creates a new array with the results of calling a provided function
 on every element in the calling array.
 
 > **Syntax:** const new_arr = arr.map(callback(currentValue[, index[, array]]) {
@@ -79,7 +80,7 @@ console.log(map1);
 ```javascript
 
 // filter function iteration
-filter() method creates a new array with all elements that pass the test implemented 
+filter() method creates a new array with all elements that pass the test implemented
 by the provided function.
 
 > Syntax: const newArray = arr.filter(callback(element[, index[, array]])[, thisArg])
@@ -99,14 +100,17 @@ console.log(result);
 Here you can dispatch DOM events. Such events are commonly called synthetic events.
 
 ```javascript
+<h1 id="elem">Hello from the script!</h1>;
 
-// Adding custom data and triggering – CustomEvent().
-document.dispatchEvent(new CustomEvent('your-event-name', { detail: somedata }));
+// catch on document...
+document.addEventListener("hello", (event) => {
+  // (1)
+  alert("Hello from " + event.target.tagName); // Hello from H1
+});
 
-// Catch custom data – CustomEvent().
-document.addEventListener('your-event-name', (event) => {
-  // event.target matches elem
-}, false);
+// ...dispatch on elem!
+let event = new Event("hello", { bubbles: true }); // (2)
+elem.dispatchEvent(event);
 ```
 
 ## License
