@@ -1,37 +1,30 @@
-/*
- * File: /Users/tonymedrano/Desktop/frontend-polymer-training/README.md
  * Project: /Users/tonymedrano/Desktop/frontend-polymer-training
  * Created Date: Monday July 1st 2019
  * Author: tonymedrano
- * -----
- * Last Modified:
- * Modified By:
- * -----
- * Copyright (c) 2019 Your Company
- */
  
 <img src="https://avatars1.githubusercontent.com/u/4284691?v=3&s=200" title="FVCproductions" alt="FVCproductions">
 
 # frontend-polymer-training
-Tips and tricks workingwith Polymer WebComponents
+Tips and tricks working with Polymer 2.0 WebComponents
 
 > update and install this package first
 
 ```shell
-$ brew update
-$ brew install fvcproductions
+$ yarn global add polymer-cli
+# or... 
+$ npm install -g polymer-cli
+$ npm install -g bower
+$ bower install (dependecies)
+$ polymer init (create)
+$ polymer serve (run local server)
+$ polymer build (compile the project)
 ```
 
-> now install npm and bower packages
+## Javascript (Optional)
 
-```shell
-$ npm install
-$ bower install
-```
-
----
-
-## Example (Optional)
+I use `let` when I need to reassign a variable and
+`const` is a signal that the identifier won’t be reassigned.
+`var` is now the weakest signal available when you define a variable in JavaScript.
 
 ```javascript
 // code away!
