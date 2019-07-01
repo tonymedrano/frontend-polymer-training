@@ -256,16 +256,17 @@ http.send(params);
 The custom element spec provides a set of callbacks called "custom element reactions" 
 that allow you to run user code in response to certain lifecycle changes.
 
-**constructor** -> Called when the element is upgraded (that is, when an element is created, 
+**constructor**: Called when the element is upgraded (that is, when an element is created, 
 or when a previously-created element becomes defined).
 
-**connectedCallback** -> Called when the element is added to a document.
+**connectedCallback**: Called when the element is added to a document.
 
-**disconnectedCallback** -> Called when the element is removed from a document.
+**disconnectedCallback**: Called when the element is removed from a document.
 
-**attributeChangedCallback** -> Called when any of the element's attributes are changed, 
+**attributeChangedCallback**: Called when any of the element's attributes are changed, 
 appended, removed, or replaced, For each reaction, the first line of your implementation 
 must be a call to the superclass constructor or reaction. 
+
 For the constructor, this is simply the **super()** call.
 
 ```javascript
@@ -286,6 +287,38 @@ connectedCallback() {
 ```
 <img src="http://www.tonymedrano.com/webcomponent.png" title="Polymer Technology Webcomponent" alt="Polymer Technology Webcomponent" width="100%">
 
+**Observers** are methods invoked when observable changes occur to the element's data.
+
+**Simple observer** for a property.
+```javascript
+// ...
+static get properties() {
+    return {
+      active: {
+        type: Boolean,
+        // Observer method identified by name
+        observer: '_activeChanged'
+      }
+    }
+  }
+
+  // Observer method defined as a class method
+  _activeChanged(newValue, oldValue) {
+    this.toggleClass('highlight', newValue);
+  }
+  // ...
+```
+**Complex observers** are declared in the observers array.
+Here you can use or create a fucntion that observes and notifies props changes.
+
+```javascript
+static get observers() {
+  return [
+    // Observer method name, followed by a list of dependencies, in parenthesis
+    'userListChanged(users.*, filter)'
+  ]
+}
+```
 ---
 
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
