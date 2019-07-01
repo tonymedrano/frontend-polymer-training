@@ -260,7 +260,9 @@ that allow you to run user code in response to certain lifecycle changes.
 or when a previously-created element becomes defined).
 
 **connectedCallback** -> Called when the element is added to a document.
+
 **disconnectedCallback** -> Called when the element is removed from a document.
+
 **attributeChangedCallback** -> Called when any of the element's attributes are changed, 
 appended, removed, or replaced, For each reaction, the first line of your implementation 
 must be a call to the superclass constructor or reaction. 
