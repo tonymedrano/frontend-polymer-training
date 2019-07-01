@@ -5,7 +5,7 @@
  
 <img src="https://colaninfotech.com/wp-content/uploads/2019/01/Polymer_Banner.png" title="Polymer Technology" alt="Polymer Technology"  width="100%">
 
-# frontend-polymer-training
+# frontend-polymer-training (Javascript used in examples only)
 Tips and tricks working with Polymer 2.0 WebComponents
 
 ## Installation
@@ -31,14 +31,14 @@ $ polymer serve (run local server)
 $ polymer build (compile the project)
 ```
 
-## Javascript varibales declaration (used in example)
+## Javascript varibales declaration
 
 I use `let` when I need to reassign a variable and
 `const` is a signal that the identifier won’t be reassigned.
 `var` is now the weakest signal available when you define a variable in JavaScript.
 
 
-## Javascript iterators (used in example)
+## Javascript iterators
 
 Iterator is a interface that specifies that an object/array object can be accessible 
 if it implements one of the following method:
@@ -95,7 +95,7 @@ console.log(result);
 
 <img src="https://i.pinimg.com/originals/dc/b9/30/dcb9303ed1fa81fe641e1e25ac644bb1.gif" title="Polymer Technology Ironman" alt="Polymer Technology Ironman" width="100%">
 
-## Javascript Custom Events (used in example)
+## Javascript Custom Events
 
 Here you can dispatch DOM events. Such events are commonly called synthetic events.
 
