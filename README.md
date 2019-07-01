@@ -45,6 +45,16 @@ I use `let` when I need to reassign a variable and
 ```javascript
 this.set('property', something); //. not this.property = something 😱
 ```
+## For this more complicated property, you supply a configuration object with several fields.
+The **value** specifies the property's default value.
+
+The **notify** property tells Polymer to dispatch property change events when the property value changes. 
+This lets the change be observed by other nodes.
+
+The **reflectToAttribute** property tells Polymer to update the corresponding attribute 
+when the property changes.
+
+---
 
 ## Javascript iterators
 
