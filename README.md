@@ -109,6 +109,27 @@ document.addEventListener('your-event-name', (event) => {
   // event.target matches elem
 }, false);
 ```
+## Javascript Template literals
+
+ Are enclosed by the back-tick (` `).
+
+```javascript
+
+// Old fashion style
+var a = 5;
+var b = 10;
+console.log('Fifteen is ' + (a + b) + ' and\nnot ' + (2 * a + b) + '.');
+// "Fifteen is 15 and
+// not 20."
+
+// New fashion style
+let a = 5;
+let b = 10;
+console.log(`Fifteen is ${a + b} and not ${2 * a + b}.`);
+// "Fifteen is 15 and
+// not 20."
+
+```
 
 ## License
 
