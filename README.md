@@ -30,11 +30,17 @@ $ polymer serve (run local server)
 $ polymer build (compile the project)
 ```
 
-## Javascript (used in example)
+## Javascript varibales declaration (used in example)
 
 I use `let` when I need to reassign a variable and
 `const` is a signal that the identifier won’t be reassigned.
 `var` is now the weakest signal available when you define a variable in JavaScript.
+
+
+## Javascript iterators (used in example)
+
+Iterator is a interface that specifies that an object/array object can be accessible 
+if it implements one of the following method:
 
 ```javascript
 // forEach function iteration
@@ -55,11 +61,30 @@ arr.forEach((element) => {
 ```javascript
 
 // map function iteration
-map() method creates a new array with the results of calling a provided function on every element in the calling array
+map() method creates a new array with the results of calling a provided function 
+on every element in the calling array.
 
-> Syntax: var new_array = arr.map(function callback(currentValue[, index[, array]]) {
-    // Return element for new_array
-}[, thisArg])
+> Syntax: const new_arr = arr.map(callback(currentValue[, index[, array]]) {
+    // Return element for new_arr
+}[, thisArg]);
+
+// map function ieration
+const arr2 = [1, 4, 9, 16];
+// pass a function to map
+const map1 = arr2.map(x => x * 2);
+console.log(map1);
+// expected output: Array [2, 8, 18, 32]
+```
+
+```javascript
+
+// map function iteration
+map() method creates a new array with the results of calling a provided function 
+on every element in the calling array.
+
+> Syntax: const new_arr = arr.map(callback(currentValue[, index[, array]]) {
+    // Return element for new_arr
+}[, thisArg]);
 
 // map function ieration
 const arr2 = [1, 4, 9, 16];
