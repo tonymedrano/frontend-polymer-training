@@ -175,7 +175,7 @@ console.log(
 
 ---
 
-<img src="https://66.media.tumblr.com/655bac733ca8683c9768bf10a924b11d/tumblr_mqnxqhoc5Y1syu690o2_500.gif" title="Polymer Technology Ironman" alt="Polymer Technology Ironman" width="100%">
+<img src="https://cdn3.whatculture.com/images/2014/02/Iron-Man.jpg" title="Polymer Technology Ironman" alt="Polymer Technology Ironman" width="100%">
 
 ## Javascript HTTP and Ajax
 
