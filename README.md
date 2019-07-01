@@ -252,8 +252,36 @@ http.send(params);
 
 ## Polymer webcomponent structure
 
-The **JSON object**, available in all modern browsers, has two very useful methods to deal with JSON-formatted content:
+**Custom element lifecycle**
+The custom element spec provides a set of callbacks called "custom element reactions" 
+that allow you to run user code in response to certain lifecycle changes.
 
+**constructor** -> Called when the element is upgraded (that is, when an element is created, 
+or when a previously-created element becomes defined).
+
+**connectedCallback** -> Called when the element is added to a document.
+**disconnectedCallback** -> Called when the element is removed from a document.
+**attributeChangedCallback** -> Called when any of the element's attributes are changed, 
+appended, removed, or replaced, For each reaction, the first line of your implementation 
+must be a call to the superclass constructor or reaction. 
+For the constructor, this is simply the **super()** call.
+
+```javascript
+constructor() {
+  super();
+  // …
+}
+```
+
+For other reactions, call the superclass method. 
+This is required so Polymer can hook into the element's lifecycle.
+
+```javascript
+connectedCallback() {
+  super.connectedCallback();
+  // …
+}
+```
 <img src="http://www.tonymedrano.com/webcomponent.png" title="Polymer Technology Webcomponent" alt="Polymer Technology Webcomponent" width="100%">
 
 ---
