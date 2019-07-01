@@ -2,7 +2,7 @@
 - Created Date: Friday June 28 2019
 - Author: tonymedrano 👦🏽
 
-<img src="https://colaninfotech.com/wp-content/uploads/2019/01/Polymer_Banner.png" title="Polymer Technology" alt="Polymer Technology"  width="100%">
+<img src="https://cdn-images-1.medium.com/max/1600/1*5GBnqWJWD9-uIrEnTgGAGA.png" title="Polymer Technology" alt="Polymer Technology"  width="100%">
 
 # frontend-polymer-training (used in examples)
 
