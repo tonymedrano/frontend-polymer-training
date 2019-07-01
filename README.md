@@ -176,7 +176,7 @@ console.log(
 
 ## Javascript HTTP and Ajax
 
-**Fetch** provides a generic definition of Request
+**Fetch and XMLHttpRequest** - javascript provides two generic definitions of Request
 and Response objects (and other things involved with network requests).
 
 The **fetch()** method takes one mandatory argument, the path to the resource you want to fetch.
