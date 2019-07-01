@@ -46,7 +46,7 @@ if it implements one of the following method:
 // forEach function iteration
 forEach() method executes a provided function once for each array element.
 
-> **Syntax:** arr.forEach(callback(currentValue [, index [, array]])[, thisArg]);
+**Syntax:** arr.forEach(callback(currentValue [, index [, array]])[, thisArg]);
 
 const arr = ['a', 'b', 'c'];
 
@@ -64,7 +64,7 @@ arr.forEach((element) => {
 map() method creates a new array with the results of calling a provided function 
 on every element in the calling array.
 
-> **Syntax:** const new_arr = arr.map(callback(currentValue[, index[, array]]) {
+**Syntax:** const new_arr = arr.map(callback(currentValue[, index[, array]]) {
     // Return element for new_arr
 }[, thisArg]);
 
@@ -82,7 +82,7 @@ console.log(map1);
 filter() method creates a new array with all elements that pass the test implemented 
 by the provided function.
 
-> **Syntax:** const newArray = arr.filter(callback(element[, index[, array]])[, thisArg])
+**Syntax:** const newArray = arr.filter(callback(element[, index[, array]])[, thisArg])
 
 const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
 const result = words.filter(word => word.length > 6);
