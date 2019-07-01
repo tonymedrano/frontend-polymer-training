@@ -43,18 +43,21 @@ I use `let` when I need to reassign a variable and
 👇🏽 **Polymer** recommends variable assigment like below:
 
 ```javascript
-this.set('property', something); //. not this.property = something 😱
+this.set("property", something); //. not this.property = something 😱
 ```
+
 ### Other property configuration object with several fields.
+
 The **value** specifies the property's default value.
 
-The **notify** property tells Polymer to dispatch property change events when the property value changes. 
+The **notify** property tells Polymer to dispatch property change events when the property value changes.
 This lets the change be observed by other nodes.
 
-The **reflectToAttribute** property tells Polymer to update the corresponding attribute 
+The **reflectToAttribute** property tells Polymer to update the corresponding attribute
 when the property changes.
 
 ```javascript
+// ...
 static get properties() {
       return {
         pressed: {
@@ -68,6 +71,7 @@ static get properties() {
         },
       }
     }
+    // ...
 ```
 
 ## Javascript iterators
@@ -279,23 +283,22 @@ http.send(params);
 
 <img src="https://rkuykendall.github.io/wheretostartreading/articles/iron-man.jpg" title="Polymer Technology Ironman" alt="Polymer Technology Ironman" width="100%">
 
-
 ## Polymer webcomponent structure
 
 **Custom element lifecycle**
-The custom element spec provides a set of callbacks called "custom element reactions" 
+The custom element spec provides a set of callbacks called "custom element reactions"
 that allow you to run user code in response to certain lifecycle changes.
 
-**constructor**: Called when the element is upgraded (that is, when an element is created, 
+**constructor**: Called when the element is upgraded (that is, when an element is created,
 or when a previously-created element becomes defined).
 
 **connectedCallback**: Called when the element is added to a document.
 
 **disconnectedCallback**: Called when the element is removed from a document.
 
-**attributeChangedCallback**: Called when any of the element's attributes are changed, 
-appended, removed, or replaced, For each reaction, the first line of your implementation 
-must be a call to the superclass constructor or reaction. 
+**attributeChangedCallback**: Called when any of the element's attributes are changed,
+appended, removed, or replaced, For each reaction, the first line of your implementation
+must be a call to the superclass constructor or reaction.
 
 For the constructor, this is simply the **super()** call.
 
@@ -306,7 +309,7 @@ constructor() {
 }
 ```
 
-For other reactions, call the superclass method. 
+For other reactions, call the superclass method.
 This is required so Polymer can hook into the element's lifecycle.
 
 ```javascript
@@ -315,11 +318,13 @@ connectedCallback() {
   // …
 }
 ```
+
 <img src="http://www.tonymedrano.com/webcomponent.png" title="Polymer Technology Webcomponent" alt="Polymer Technology Webcomponent" width="100%">
 
 **Observers** are methods invoked when observable changes occur to the element's data.
 
 **Simple observer** for a property.
+
 ```javascript
 // ...
 static get properties() {
@@ -338,6 +343,7 @@ static get properties() {
   }
   // ...
 ```
+
 **Complex observers** are declared in the observers array for more than one property to check.
 Here you can use or create a function that observes and notifies props changes.
 
@@ -349,6 +355,7 @@ static get observers() {
   ]
 }
 ```
+
 ---
 
 [![License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://badges.mit-license.org)
