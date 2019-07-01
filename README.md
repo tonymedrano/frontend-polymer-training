@@ -1,8 +1,5 @@
  * Project: /Users/tonymedrano/Desktop/frontend-polymer-training
  * Created Date: Friday June 28 2019
-  |\   /|
-   \|_|/
-   /. .\ 
  * Author: tonymedrano
   
  
@@ -96,7 +93,7 @@ console.log(result);
 
 ---
 
-<img src="https://i.pinimg.com/originals/dc/b9/30/dcb9303ed1fa81fe641e1e25ac644bb1.gif" title="Polymer Technology Ironman" alt="Polymer Technology Ironman">
+<img src="http://www.kodecrash.com/wp-content/uploads/2018/09/Custom-events.png" title="Polymer Technology" alt="Polymer Technology">
 
 ## Javascript Custom Events (used in example)
 
