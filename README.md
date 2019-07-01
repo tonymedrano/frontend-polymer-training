@@ -54,8 +54,6 @@ This lets the change be observed by other nodes.
 The **reflectToAttribute** property tells Polymer to update the corresponding attribute 
 when the property changes.
 
----
-
 ## Javascript iterators
 
 Iterator is a interface that specifies that an object/array object can be accessible
