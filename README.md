@@ -190,7 +190,8 @@ fetch("http://your-url.com/endpoint")
     console.log(JSON.stringify(myJson));
   });
 
-// The second is an object of options including mehtod (GET, POST, PATCH, DELETE), credentials, headers, body.
+// The second is an object of options including mehtod (GET, POST, PATCH, DELETE), 
+credentials, headers, body.
 const url = "http://your-url.com/endpoint/profile";
 const data = { username: "example" };
 
@@ -220,6 +221,23 @@ xhttp.onreadystatechange = () => {
 };
 xhttp.open("GET", "filename", true);
 xhttp.send();
+
+// POST example
+const http = new XMLHttpRequest();
+const url = 'http://your-url.com/endpoint/';
+const params = 'lorem=ipsum&name=tonymedrano';
+http.open('POST', url, true); // Or DELETE, PATCH, etc.
+
+//Send the proper header information along with the request
+http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+
+http.onreadystatechange = () => {//Call a function when the state changes.
+    if(http.readyState == 4 && http.status == 200) {
+        alert(http.responseText);
+    }
+};
+
+http.send(params);
 ```
 
 ---
