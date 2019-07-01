@@ -54,6 +54,22 @@ This lets the change be observed by other nodes.
 The **reflectToAttribute** property tells Polymer to update the corresponding attribute 
 when the property changes.
 
+```javascript
+static get properties() {
+      return {
+        pressed: {
+          type: Boolean,
+          notify: true,
+          reflectToAttribute: true,
+          value: false
+        },
+        toggleIcon: {
+          type: String
+        },
+      }
+    }
+```
+
 ## Javascript iterators
 
 Iterator is a interface that specifies that an object/array object can be accessible
