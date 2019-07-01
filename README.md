@@ -65,7 +65,7 @@ arr.forEach((element) => {
 map() method creates a new array with the results of calling a provided function 
 on every element in the calling array.
 
-> **Syntax:** const new_arr = arr.map(callback(currentValue[, index[, array]]) {
+> Syntax: const new_arr = arr.map(callback(currentValue[, index[, array]]) {
     // Return element for new_arr
 }[, thisArg]);
 
