@@ -285,7 +285,7 @@ http.send(params);
 
 ## Polymer WebComponent structure 🙌🏾
 
-**Custom element lifecycle** 🤡 spec provides a set of callbacks called "custom element reactions"
+**Custom element lifecycle** spec provides a set of callbacks called "custom element reactions"
 that allow you to run user code in response to certain lifecycle changes.
 
 **constructor**: Called when the element is upgraded (that is, when an element is created,
