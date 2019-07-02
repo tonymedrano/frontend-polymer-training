@@ -283,10 +283,9 @@ http.send(params);
 
 <img src="https://rkuykendall.github.io/wheretostartreading/articles/iron-man.jpg" title="Polymer Technology Ironman" alt="Polymer Technology Ironman" width="100%">
 
-## Polymer webcomponent structure
+## Polymer WebComponent structure 🙌🏾
 
-**Custom element lifecycle**
-The custom element spec provides a set of callbacks called "custom element reactions"
+**Custom element lifecycle** 🤡 spec provides a set of callbacks called "custom element reactions"
 that allow you to run user code in response to certain lifecycle changes.
 
 **constructor**: Called when the element is upgraded (that is, when an element is created,
