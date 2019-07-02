@@ -48,12 +48,12 @@ this.set("property", something); //. not this.property = something 😱
 
 ### Other property configuration object with several fields.
 
-The **value** specifies the property's default value.
+🌚 **value** specifies the property's default value.
 
-The **notify** property tells Polymer to dispatch property change events when the property value changes.
+🌚 **notify** property tells Polymer to dispatch property change events when the property value changes.
 This lets the change be observed by other nodes.
 
-The **reflectToAttribute** property tells Polymer to update the corresponding attribute
+🌚 **reflectToAttribute** property tells Polymer to update the corresponding attribute
 when the property changes.
 
 ```javascript
