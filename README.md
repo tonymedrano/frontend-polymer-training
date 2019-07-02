@@ -283,19 +283,19 @@ http.send(params);
 
 <img src="https://rkuykendall.github.io/wheretostartreading/articles/iron-man.jpg" title="Polymer Technology Ironman" alt="Polymer Technology Ironman" width="100%">
 
-## Polymer WebComponent structure 🙌🏾
+## Polymer WebComponent Anatomy  🙌🏾
 
 **Custom element lifecycle** spec provides a set of callbacks called "custom element reactions"
 that allow you to run user code in response to certain lifecycle changes.
 
-**constructor**: Called when the element is upgraded (that is, when an element is created,
+👉🏽 **constructor**: Called when the element is upgraded (that is, when an element is created,
 or when a previously-created element becomes defined).
 
-**connectedCallback**: Called when the element is added to a document.
+👉🏽 **connectedCallback**: Called when the element is added to a document.
 
-**disconnectedCallback**: Called when the element is removed from a document.
+👉🏽 **disconnectedCallback**: Called when the element is removed from a document.
 
-**attributeChangedCallback**: Called when any of the element's attributes are changed,
+👉🏽 **attributeChangedCallback**: Called when any of the element's attributes are changed,
 appended, removed, or replaced, For each reaction, the first line of your implementation
 must be a call to the superclass constructor or reaction.
 
